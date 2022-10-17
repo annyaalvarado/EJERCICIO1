@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EJERCICIO1.Views.Resultado">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame BackgroundColor="#2196F3" Padding="0" CornerRadius="0">
+
+                <Label Text="Calculadora Sencilla" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" Margin="10,10"/>
+
+            </Frame> 
+            <Label
+                x:Name="txtResult" 
+                Text="El resultado es: x numero"
+                FontAttributes="Bold"
+                FontSize="Title"
+                TextColor="Black"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+           
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

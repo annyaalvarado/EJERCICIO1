@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EJERCICIO1.MainPage">
+
+
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="0" CornerRadius="0">
+
+            <Label Text="Calculadora sencilla" HorizontalTextAlignment="Center" TextColor="White" FontSize="26" Margin="10,10"/>
+
+        </Frame>
+        <Label FontAttributes="Bold" Text="Ingresa los valores a calcular" FontSize="Title" Padding="30,10,30,10" HorizontalTextAlignment="Center"/>
+        <Label FontSize="16" Padding="30,15,30,0" TextColor="Black">
+            <Label.FormattedText>
+                <FormattedString>
+
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <Label   Text="Ingresar valor 1" HorizontalTextAlignment="Start" TextColor="Black" FontSize="20" Margin="10,0  "/>
+        <Entry x:Name="txtnum1" Keyboard="Numeric" Placeholder="Primer digito" HorizontalTextAlignment="Start" Margin="10,0"   />
+
+
+        <Label Text="Ingresar valor 2 " HorizontalTextAlignment="Start" TextColor="Black" FontSize="20" Margin="10,0"/>
+        <Entry x:Name="txtnum2" Keyboard="Numeric" Placeholder="Segundo digito" HorizontalTextAlignment="Start" Margin="10,0" />
+        <Label Padding="0,0,0,0" ></Label>
+
+
+
+
+        <Button Text="Calcular suma"
+        x:Name="btnsuma"
+        Font="Large"
+        BorderWidth="1"
+        Margin="10,0"
+        BackgroundColor="#2196F3"
+        TextColor="White"
+        Clicked="Operation_Clicked" />
+
+        <Button Text="Calcular Resta"
+         x:Name="btnresta" 
+        Font="Large"
+        BorderWidth="1"
+        BackgroundColor="#2196F3"
+        Margin="10,0"
+        TextColor="White"
+       HorizontalOptions="Fill"
+        VerticalOptions="Start"
+        Clicked="Operation_Clicked" />
+
+        <Button Text="Calcular Multiplicacion"
+         x:Name="btnmultiplicacion" 
+        Font="Large"
+        BorderWidth="10"
+        Margin="10,0"
+        BackgroundColor="#2196F3"
+        TextColor="White"
+        HorizontalOptions="Fill"
+        VerticalOptions="Start"
+        Clicked="Operation_Clicked" />
+
+        <Button Text="Calcular Division"
+        x:Name="btdivision" 
+        Font="Large"
+        BorderWidth="1"
+        Margin="10,0"
+        BackgroundColor="#2196F3"
+        TextColor="White"
+        HorizontalOptions="Fill"
+        VerticalOptions="Start"
+        Clicked="Operation_Clicked" />
+
+
+
+    </StackLayout>
+
+</ContentPage>
